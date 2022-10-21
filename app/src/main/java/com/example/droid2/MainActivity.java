@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onStringAvailable(String s) {
                         onMessage();
+                         System.out.println( StringToBinary.convertStringToBinary(s));
                         webSocket.send("received");
                     }
                 });
